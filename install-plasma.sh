@@ -33,6 +33,8 @@ sudo ./home-directories.sh
 sudo echo 'vm.swappiness=10' >> /etc/sysctl.d/99-swappiness.conf
 
 #install yay
+sudo chown rich:rich /a
+sudo chown rich:rich /a/kde-setup/yay-install.sh
+cd /a/kde-setup
 sudo chmod +x yay-install.sh
-sudo chown rich:rich yay-install.sh
 ./yay-install.sh
