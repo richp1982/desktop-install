@@ -31,11 +31,3 @@ sudo ./home-directories.sh
 
 #set swappiness
 sudo echo 'vm.swappiness=10' >> /etc/sysctl.d/99-swappiness.conf
-
-#install yay
-
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-
-
