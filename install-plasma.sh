@@ -29,6 +29,9 @@ sudo ./setup-users.sh
 sudo chmod +x home-directories.sh
 sudo ./home-directories.sh
 
+#set swappiness
+echo 'vm.swappiness=10' >> /etc/sysctl.d/99-swappiness.conf
+
 #install yay
 
 git clone https://aur.archlinux.org/yay.git
