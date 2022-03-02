@@ -4,7 +4,7 @@
 sudo pacman -Syyu xorg sddm plasma-desktop --noconfirm --needed
 
 #install optional packages
-sudo pacman -S ibus kaccounts-integration kscreen packagekit-qt5 neofetch plasma-nm powerdevil scim okular breeze breeze-gtk kde-gtk-config kinfocenter kate konsole kwallet kwallet-pam oxygen sddm-kcm breeze-grub kdecoration kscreenlocker ksystemstats kwin libkscreen libksysguard plasma-disks plasma-systemmonitor plasma-workspace plasma-workspace-wallpapers polkit-kde-agent systemsettings xdg-desktop-portal-kde kmix bluedevil kde-cli-tools gparted firefox  xf86-input-synaptics kdegraphics-thumbnailers ffmpegthumbs colord-kde ttf-dejavu ttf-liberation dolphin --noconfirm --needed
+sudo pacman -S ibus kaccounts-integration kscreen packagekit-qt5 neofetch plasma-nm powerdevil scim okular breeze breeze-gtk kde-gtk-config kinfocenter kate konsole kwallet kwallet-pam oxygen sddm-kcm kdecoration kscreenlocker ksystemstats kwin libkscreen libksysguard plasma-disks plasma-systemmonitor plasma-workspace plasma-workspace-wallpapers polkit-kde-agent systemsettings xdg-desktop-portal-kde kmix bluedevil kde-cli-tools gparted firefox  xf86-input-synaptics kdegraphics-thumbnailers ffmpegthumbs colord-kde ttf-dejavu ttf-liberation dolphin --noconfirm --needed
 
 #install audio packages
 sudo pacman -S alsa-utils alsa-firmware pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-jack vlc mplayer rhytmbox --noconfirm --needed
@@ -43,3 +43,11 @@ sudo chmod +x yay-install.sh
 git clone git://github.com/ohmybash/oh-my-bash.git /home/rich/.oh-my-bash
 git clone git://github.com/richp1982/dot-files-arch.git
 cp /a/dot-files/bashrc /home/rich/.bashrc
+
+#enable breeze grub theme
+cd /a
+git clone https://github.com/gustawho/grub2-theme-breeze.git
+cd grub2-theme-breeze
+sudo cp -r breeze /usr/share/grub/themes/
+sudo echo 'GRUB_THEME="/usr/share/grub/themes/breeze/theme.txt'
+sudo grub-mkconfig -o /boot/grub/grub.cfg
