@@ -49,5 +49,5 @@ cd /a
 git clone https://github.com/gustawho/grub2-theme-breeze.git
 cd grub2-theme-breeze
 sudo cp -r breeze /usr/share/grub/themes/
-sudo echo 'GRUB_THEME="/usr/share/grub/themes/breeze/theme.txt'
+sudo sed -i 's|GRUB_THEME=|GRUB_THEME=/usr/share/grub/themes/breeze/theme.txt"|' /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
