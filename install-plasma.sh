@@ -40,12 +40,11 @@ sudo chmod +x yay-install.sh
 ./yay-install.sh
 
 #install ohmtbash
-
+cd /a/kde-setup
+sudo chmod +x bash-steup.sh
+./bash-setup.sh
 
 #enable breeze grub theme
-cd /a
-git clone https://github.com/gustawho/grub2-theme-breeze.git
-cd grub2-theme-breeze
-sudo cp -r breeze /usr/share/grub/themes/
-sudo sed -i 's|GRUB_THEME=|GRUB_THEME=/usr/share/grub/themes/breeze/theme.txt"|' /etc/default/grub
-sudo grub-mkconfig -o /boot/grub/grub.cfg
+cd /a/kde-setup
+sudo chmod +x grub-theme.sh
+sudo ./grub-theme.sh
