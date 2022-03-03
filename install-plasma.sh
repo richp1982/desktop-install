@@ -33,12 +33,14 @@ sudo ./home-directories.sh
 sudo echo 'vm.swappiness=10' >> /etc/sysctl.d/99-swappiness.conf
 
 #install yay
-
+sudo chown rich:rich /a
+sudo chown rich:rich /a/kde-setup/yay-install.sh
+cd /a/kde-setup
+sudo chmod +x yay-install.sh
+./yay-install.sh
 
 #install ohmtbash
-git clone git://github.com/ohmybash/oh-my-bash.git /home/rich/.oh-my-bash
-git clone git://github.com/richp1982/dot-files-arch.git
-cp /a/dot-files/bashrc /home/rich/.bashrc
+
 
 #enable breeze grub theme
 cd /a
