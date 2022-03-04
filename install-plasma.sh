@@ -16,8 +16,9 @@ sudo pacman -S gimp blender libreoffice-fresh libreoffice-fresh-en-gb libreoffic
 sudo systemctl enable sddm
 
 #sddm login settings
+#select keyboard en=english (QWERTY) fr=french (AZERTY)
+sudo echo setxkbmap "?" >> /usr/share/sddm/scripts/Xsetup
 sudo cp sddm.conf /etc/sddm.conf
-sudo cp Xsetup /usr/share/sddm/scripts/Xsetup
 
 #set up printer
 sudo chmod +x printer-setup.sh
