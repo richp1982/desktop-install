@@ -6,7 +6,7 @@
 #install packages
 sudo pacman -Sy cups cups-pdf --noconfirm --needed
 sudo pacman -S usbutils ghostscript gsfonts --noconfirm --needed
-sudo pacman -S foomatic-db-engine foomatic-db foomatic-db-ppds foomatic-db-nonfree foomatic-db-nonfree-ppds --noconfirm --needed
+sudo pacman -S foomatic-db-engine foomatic-db foomatic-db-ppds foomatic-db-nonfree foomatic-db-nonfree-ppds gutenprint foomatic-db-gutenprint-ppds --noconfirm --needed
 sudo pacman -S avahi --noconfirm --needed
 sudo pacman -S print-manager --noconfirm --needed
 
