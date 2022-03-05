@@ -39,6 +39,13 @@ cd /a/kde-setup
 sudo chmod +x yay-install.sh
 ./yay-install.sh
 
+#install aur packages
+yay brave-bin
+yay zoom
+yay skypeforlinux-stable-bin
+yay google-chrome
+yay spotify
+
 #run clean-up
 cd /a/kde-setup
 sudo chmod +x clean-up.sh
