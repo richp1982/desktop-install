@@ -39,5 +39,8 @@ cd /a/kde-setup
 sudo chmod +x yay-install.sh
 ./yay-install.sh
 
-
+#run clean-up
+cd /a/kde-setup
+sudo chmod +x clean-up.sh
+sudo ./clean-up.sh
 
