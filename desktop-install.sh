@@ -5,7 +5,7 @@
 #sudo chmod +x i3.sh && ./i3.sh
 
 #install audio & DVD packages
-sudo pacman -S alsa-utils alsa-firmware pulseaudio pulseaudio-alsa pulseaudio-equalizer pulseaudio-jack vlc mplayer rhytmbox libcdio lidvdread libdvdcss libdvdnav --noconfirm --needed 
+sudo pacman -S alsa-utils alsa-firmware pulseaudio pulseaudio-alsa pulseaudio-equalizer pulseaudio-jack vlc mplayer rhythmbox libcdio libdvdread libdvdcss libdvdnav --noconfirm --needed 
 
 #enable bluetooth
 #sudo pacman -S bluez bluez-utils pulseaudio-bluetooth --no-confirm --needed && sudo systemctl start bluetooth.service
