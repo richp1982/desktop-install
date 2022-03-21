@@ -21,8 +21,3 @@ sudo chmod +x audio.sh && ./audio.sh
 
 #set up home directories
 #sudo chmod +x home-directories.sh && sudo ./home-directories.sh
-
-#run clean-up
-cd /a/kde-setup
-sudo chmod +x clean-up.sh && sudo ./clean-up.sh
-
