@@ -3,9 +3,6 @@
 
 
 #home directories
-sudo rm -r /home/edyta
-sudo rm -r /home/rich/*
-sudo rm -r /home/kiwi
 sudo mkdir /home/{edyta,kiwi}
 sudo ln -s /data/shared/* /home/rich/
 sudo ln -s /data/shared/* /home/edyta/
